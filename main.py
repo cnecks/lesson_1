@@ -191,3 +191,57 @@ a = int(input('Введите натуральное число: '))
 #     print(i)
 #     for j in a:
 #         print(j)
+names = ['Artem', 'Nikita', 'Steve', 'Jhon']
+surnames = ['Troshkin', 'Ivanov', 'Ivanov', 'Petrov']
+
+print(names * surnames)
+
+
+# names[2] = 'vlad'
+# print(names)
+
+names.append('Irina')
+print(names)
+
+names.remove('Jhon')
+print(names)
+
+del names[0]
+
+names.pop()
+print(names)
+
+
+
+if 'Nikita' in names:
+    print('Никита на месте!')
+if 'Ann' not in names:
+    print('Анна отсутствует!')
+
+
+index = names.index(20)
+print(index)
+
+
+list_2 = [i for i in range(1, 10)]
+
+print(list_2)
+
+
+list_3 = [1, 5, 4, 2, 8, 7]
+# list_3.sort()
+# print(list_3)
+
+list_4 = [int(number) for number in input().split()]
+print(list_4)
+
+
+list_5 = [i for i in range(800)]
+
+
+if 777 in list_5:
+    var = True
+    print(var)
+else:
+    var = False
+    print(var)
